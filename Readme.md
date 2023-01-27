@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Диана Кондрашова](https://up.htmlacademy.ru/htmlcss/36/user/2252467).
-* Наставник: [Дмитрий
-Виноградов] (https://htmlacademy.ru/profile/id839417).
+* Наставник: [Дмитрий Виноградов] (https://htmlacademy.ru/profile/id839417).
 
 ---
 
