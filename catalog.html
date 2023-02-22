@@ -48,69 +48,71 @@
             </nav>
         </header>
         <main class="main-catalog">
-            <div class="header-topic">
-                <header class="catalog-header">
-                    <h1 class="main-topic">Гостиницы Седоны</h1>
-                    <ul class="breadcrumbs-list">
-                        <li class="breadcrumbs-item">
-                            <a href="index.html">
-                                <span class="visually-hidden">Главная</span>
-                            </a>
-                        </li>
-                        <li class="breadcrumbs-item">
-                            <a href="catalog.html">Гостиницы</a>
-                        </li>
-                    </ul>
-                </header>
-            </div>
-            <div class="filters">
-                <form class="filters-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <fieldset class="infrastructure">
-                        <legend>Инфраструктура:</legend>
-                        <label>
-                            <input type="checkbox" name="pool" checked>
-                            Бассейн
-                        </label>
-                        <label>
-                            <input type="checkbox" name="parking" checked>
-                            Парковка
-                        </label>
-                        <label>
-                            <input type="checkbox" name="wi-fi">
-                            Wi-Fi
-                        </label>
-                    </fieldset>
-                    <fieldset class="type-of-housing">
-                        <legend>Тип жилья:</legend>
-                        <label>
-                            <input type="radio" value="hotel" name="type-of-housing" checked>
-                            Гостиница
-                        </label>
-                        <label>
-                            <input type="radio" value="motel" name="type-of-housing">
-                            Мотель
-                        </label>
-                        <label>
-                            <input type="radio" value="apartments" name="type-of-housing">
-                            Апартаменты
-                        </label>
-                    </fieldset>
-                    <fieldset class="range-price">
-                        <legend>Стоимость</legend>
-                        <label>
-                            <input type="number" name="price-min" class="find-price"  value="0">
-                            От
-                        </label>
-                        <label>
-                            <input type="number" name="price-max" class="find-price" value="9000">
-                            До
-                        </label>
-                        <input type="range" name="price-range">
-                    </fieldset>
-                    <button type="submit" class="ready">Применить</button>
-                    <button type="reset" class="cancel">Сбросить</button>
-                </form>
-            </div>
+            <section class="picture-blur">
+                <div class="header-topic">
+                    <header class="catalog-header">
+                        <h1 class="main-topic">Гостиницы Седоны</h1>
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-item">
+                                <a href="index.html">
+                                    <span class="visually-hidden">Главная</span>
+                                </a>
+                            </li>
+                            <li class="breadcrumbs-item">
+                                <a href="catalog.html">Гостиницы</a>
+                            </li>
+                        </ul>
+                    </header>
+                </div>
+                <div class="filters">
+                    <form class="filters-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <fieldset class="infrastructure">
+                            <legend>Инфраструктура:</legend>
+                            <label>
+                                <input type="checkbox" name="pool" checked>
+                                Бассейн
+                            </label>
+                            <label>
+                                <input type="checkbox" name="parking" checked>
+                                Парковка
+                            </label>
+                            <label>
+                                <input type="checkbox" name="wi-fi">
+                                Wi-Fi
+                            </label>
+                        </fieldset>
+                        <fieldset class="type-of-housing">
+                            <legend>Тип жилья:</legend>
+                            <label>
+                                <input type="radio" value="hotel" name="type-of-housing" checked>
+                                Гостиница
+                            </label>
+                            <label>
+                                <input type="radio" value="motel" name="type-of-housing">
+                                Мотель
+                            </label>
+                            <label>
+                                <input type="radio" value="apartments" name="type-of-housing">
+                                Апартаменты
+                            </label>
+                        </fieldset>
+                        <fieldset class="range-price">
+                            <legend>Стоимость</legend>
+                            <label>
+                                <input type="number" name="price-min" class="find-price" value="0">
+                                От
+                            </label>
+                            <label>
+                                <input type="number" name="price-max" class="find-price" value="9000">
+                                До
+                            </label>
+                            <input type="range" name="price-range">
+                        </fieldset>
+                        <button type="submit" class="ready">Применить</button>
+                        <button type="reset" class="cancel">Сбросить</button>
+                    </form>
+                </div>
+            </section>
             <div class="catalog-sort">
                 <h3 class="result-hotels"> Найдено гостиниц: 38</h3>
                 <div class="price-sort">
@@ -251,7 +253,7 @@
                     </li>
                     <li class="social-item">
                         <a href="https://t.me/htmlacademy">
-                            <img src="images/telegram.svg" width="18" height="15.1" alt="Иконка Telegram.">
+                            <img src="images/telegram.svg" width="18" height="15" alt="Иконка Telegram.">
                             <span class="visually-hidden">Telegram</span>
                         </a>
                     </li>
@@ -268,7 +270,7 @@
             </div>
             <div class="our-site">
                 <a href="https://htmlacademy.ru/" class="site-logo">
-                    <img src="images/htmlacademy-logo.svg" width="114.9" height="32.9" class="logo-our-site"
+                    <img src="images/htmlacademy-logo.svg" width="115" height="33" class="logo-our-site"
                         alt="Логотип сайта HTML Academy.">
                 </a>
             </div>

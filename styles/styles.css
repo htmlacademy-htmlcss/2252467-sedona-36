@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans';
     src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
@@ -103,13 +103,17 @@ body {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 
 .blue-white {
     background: #82B3D3;
     color: #ffffff;
+    width: 400px;
+    height: 385px;
+    padding: 103px 85px;
 }
 
 
@@ -117,17 +121,24 @@ body {
 
 .square-tourists {
     background: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 385px;
+    padding: 103px 85px;
+
 }
 
 .road {
     background: rgba(131, 179, 211, 0.2);
+    width: 400px;
+    height: 385px;
+    padding: 103px 85px;
 }
 
 .invitation-title {
     font-family: 'PT Sans', sans-serif;
     line-height: 36px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 24px;
     color: #000000;
     text-transform: uppercase;
 }
@@ -136,12 +147,37 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     line-height: 26px;
-    font-size: 22px;
+    font-size: 18px;
+}
+
+.advice-item {
+    background: rgba(131, 179, 211, 0.12);
+}
+
+.food {
+    background: #ffffff;
+}
+
+.advice-item-title {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.advice-item-description {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+
 }
 
 .house-svg {
     background-image: url("../images/house.svg");
-    position: no-repeat;
     width: 75px;
     height: 72px;
     background-size: contain;
@@ -204,7 +240,6 @@ body {
     font-size: 22px;
     text-align: center;
     color: #ffffff;
-    vertical-align: ;
     line-height: 26px;
 }
 
@@ -217,7 +252,7 @@ body {
     line-height: 26px;
     text-align: center;
     width: 475px;
-    height: 52.51px;
+    height: 53px;
 }
 
 
@@ -254,20 +289,14 @@ body {
     color: #ffffff;
 }
 
-.catalog-header {
+.picture-blur {
     background-image: url("../images/bg-catalog-blur.jpg");
     position: relative;
     background-repeat: no-repeat;
     width: 1200px;
-    height: 412px;
 }
 
-.filters {
-    background-image: url('../images/bg-catalog-blur.jpg');
-    position: relative;
-    width: 1200px;
-    height: 412px;
-}
+
 
 legend {
     font-family: 'PT Sans', sans-serif;
@@ -353,7 +382,7 @@ label {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -418,7 +447,7 @@ label {
     width: 140px;
     height: 37px;
     left: 160px;
-    top: 0px;
+    top: 0;
     color: #333333;
     background: #f2f2f2;
     border-radius: 4px;
