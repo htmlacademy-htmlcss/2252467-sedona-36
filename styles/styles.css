@@ -24,6 +24,7 @@ html {
 }
 
 
+
 body {display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -54,8 +55,9 @@ body {display: flex;
 
 .navigation{
     display: flex;
+    padding: 0 70px 0 70px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -589,9 +591,18 @@ body {display: flex;
     align-items: center;*/
 }
 
-.left-content, .right-content {
+.left-content {
     display: flex;
     flex-direction: row;
+    width: 371px;
+    gap: 70px;
+    }
+
+
+.right-content {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
     gap: 70px;
 }
 
