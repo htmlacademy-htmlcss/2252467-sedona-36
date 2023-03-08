@@ -709,8 +709,9 @@ body {
 }
 
 .price-range-input-wrap {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
   margin-bottom: 20px;
 }
 
@@ -840,16 +841,13 @@ label {
 
 
 .products-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
 }
 
 .products-card-item {
-  width: 340px;
-  height: 438px;
+  min-height: 438px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   padding: 20px;
@@ -858,6 +856,7 @@ label {
 
 .product-card-image {
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .product-card-title {
@@ -928,6 +927,7 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .show-rating {
