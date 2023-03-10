@@ -17,30 +17,31 @@
                         </a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link-main navigation-link-current" href="index.html">Главная</a>
+                        <a class="navigation-link-main" href="index.html">Главная</a>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link-main" href="#">О Седоне</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link-main" href="catalog.html">Гостиницы</a>
+                        <a class="navigation-link-main navigation-link-current" href="catalog.html">Гостиницы</a>
                     </li>
+
                 </ul>
                 <ul class="navigation-list navigation-user">
                     <li class="navigation-item">
                         <a class="navigation-link-main" href="#">
-                            <img src="images/icons/search.svg" width="20" height="20" alt="Иконка поиска.">
+                            <span class="search-icon"></span>
                             <span class="visually-hidden">
                                 Поиск
                             </span>
                         </a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link-main  navigation-link-main-relative" href="#">
+                        <a class="navigation-link-main navigation-link-main-relative" href="#">
                             <span class="number-good-things">
                                 12
                             </span>
-                            <img src="images/icons/like.svg" width="20" height="20" alt="Иконка избранного.">
+                            <span class="like-icon"></span>
                             <span class="visually-hidden">
                                 Избранное
                             </span>
@@ -60,7 +61,7 @@
                         <ul class="breadcrumbs-list">
                             <li class="breadcrumbs-item">
                                 <a href="index.html">
-                                    <img src="images/icons/home.svg" width="12" height="12" alt="Иконка дома.">
+                                    <span class="icon-home"></span>
                                     <span class="visually-hidden">Главная</span>
                                 </a>
                             </li>
@@ -141,18 +142,15 @@
                         </div>
                         <div class="view-sort">
                             <button class="button button-products">
-                                <img src="images/catalog-card.svg" width="16" height="14"
-                                    alt="Иконка отображения карточек.">
+                                <span class="icon-catalog-card"></span>
                                 <span class="visually-hidden">Показать товары</span>
                             </button>
                             <button class="button button-product">
-                                <img src="images/catalog-card-bigone.svg" width="16" height="14"
-                                    alt="Иконка отображения одной карточки.">
+                                <span class="icon-catalog-card-bigone"></span>
                                 <span class="visually-hidden">Показать товар</span>
                             </button>
                             <button class="button button-list">
-                                <img src="images/catalog-list.svg" width="16" height="14"
-                                    alt="Иконка отображения списком.">
+                                <span class="icon-catalog-list"></span>
                                 <span class="visually-hidden">Показать список</span>
                             </button>
                         </div>
@@ -175,7 +173,7 @@
                         </div>
                         <div class="product-card-rating">
                             <span class="stars star-4">
-                                <span class="visully-hidden">4 звезды</span>
+                                <span class="visually-hidden">4 звезды</span>
                             </span>
                             <span class="show-rating">Рейтинг: 8,5</span>
                         </div>
@@ -196,7 +194,7 @@
                         </div>
                         <div class="product-card-rating">
                             <span class="stars star-4">
-                                <span class="visully-hidden">4 звезды</span>
+                                <span class="visually-hidden">4 звезды</span>
                             </span>
                             <span class="show-rating">Рейтинг: 9,2</span>
                         </div>
@@ -217,7 +215,7 @@
                         </div>
                         <div class="product-card-rating">
                             <span class="stars star-3">
-                                <span class="visully-hidden">3 звезды</span>
+                                <span class="visually-hidden">3 звезды</span>
                             </span>
                             <span class="show-rating">Рейтинг: 6,9</span>
                         </div>
@@ -238,7 +236,7 @@
                         </div>
                         <div class="product-card-rating">
                             <span class="stars star-2">
-                                <span class="visully-hidden">2 звезды</span>
+                                <span class="visually-hidden">2 звезды</span>
                             </span>
                             <span class="show-rating">Рейтинг: 5,0</span>
                         </div>
@@ -268,7 +266,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="subscribe-on-messages">
+            <section class="subscribe-on-messages subscribe-on-messages-bg-white">
                 <div class="subscribe-on-messages-wrap">
                     <h2 class="subscribe-message"> Подпишитесь на рассылку</h2>
                     <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное
@@ -288,19 +286,26 @@
                 <ul class="social-list">
                     <li class="social-item">
                         <a href="https://vk.com/htmlacademy">
-                            <img src="images/vk.svg" width="24" height="14" alt="Иконка ВКонтакте.">
+                            <svg class="vk-icon" aria-hidden="true" focusable="false" width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.95.948c.166-.546 0-.948-.795-.948H20.53c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.65c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.949.288 4.698 0 4.027 0H1.4C.65 0 .5.347.5.73c0 .682.89 4.07 4.145 8.551C6.815 12.341 9.87 14 12.653 14c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.61 13.216 19.903 14 20.905 14h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.81-1.858-.388-.491-.277-.71 0-1.147 0 0 3.2-4.426 3.534-5.929Z"/></svg>
+                            
                             <span class="visually-hidden">ВКонтакте</span>
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="https://t.me/htmlacademy">
-                            <img src="images/telegram.svg" width="18" height="15" alt="Иконка Telegram.">
+                            <svg class="telegram-icon" aria-hidden="true" focusable="false" width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.2853 0.0992597L1.34073 6.24776C0.252584 6.68481 0.258879 7.29184 1.14109 7.56253L5.23469 8.83953L14.7061 2.8637C15.1539 2.59121 15.5631 2.7378 15.2268 3.03636L7.55308 9.96185H7.55128L7.55308 9.96275L7.2707 14.1823C7.68438 14.1823 7.86693 13.9925 8.09895 13.7686L10.0873 11.8351L14.2232 14.89C14.9858 15.31 15.5334 15.0941 15.7232 14.1841L18.4382 1.38885C18.7161 0.274623 18.0128 -0.229883 17.2853 0.0992597Z" />
+                            </svg>
+
                             <span class="visually-hidden">Telegram</span>
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="https://www.youtube.com/user/htmlacademyru">
-                            <img src="images/youtube.svg" width="22" height="17" alt="Иконка YouTube.">
+                            <svg class="youtube-icon" aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.1072 0.5H3.67437C1.81368 0.5 0.500244 2.09375 0.500244 3.9V13.9937C0.500244 15.9062 1.81368 17.5 3.67437 17.5H19.3261C20.9679 17.5 22.5002 15.9062 22.5002 14.1V3.9C22.2813 2.09375 20.9679 0.5 19.1072 0.5ZM8.16194 13.0375V4.9625L15.4953 9L8.16194 13.0375Z"/>
+                            </svg>
+
                             <span class="visually-hidden">YouTube</span>
                         </a>
                     </li>
@@ -311,11 +316,12 @@
             </div>
             <div class="our-site">
                 <a href="https://htmlacademy.ru/" class="site-logo">
-                    <img src="images/htmlacademy-logo.svg" width="115" height="33" class="logo-our-site"
-                        alt="Логотип сайта HTML Academy.">
+                    <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9999 6.2C8.7999 5.2 9.9999 4.5 11.5999 4.5C14.2999 4.5 16.1999 6.4 16.0999 9.4V15.5H14.0999V9.8C14.0999 8 12.9999 6.6 11.1999 6.6C9.1999 6.6 7.8999 8.1 7.8999 10.2V15.5H5.8999V0H7.8999V6.2H7.9999ZM0 15.5V12.9H2.5V15.5H0ZM26.5999 4.79998H21.7999V1.09998H19.7999V4.89998H17.8999V6.89998H19.7999V12.9C19.7999 14.6 20.7999 15.6 22.4999 15.6H26.5999V13.6H22.8999C22.1999 13.6 21.7999 13.2 21.7999 12.5V6.79998H26.5999V4.79998ZM37.6 6.69998C38.2 5.39998 39.5 4.59998 41.1 4.59998C43.6 4.59998 45.1 6.39998 45 8.89997V15.4H43V9.09998C43 7.49998 42.1 6.49998 40.6 6.49998C39.4 6.49998 38 7.39998 38 9.79998V15.4H36V9.09998C36 7.49998 35.1 6.49998 33.6 6.49998C32 6.49998 31 7.99998 31 9.99998V15.4H29V4.79998H30.9V6.39998H31C31.6 5.39998 32.7 4.59998 34.1 4.59998C35.7 4.59998 36.9 5.49998 37.5 6.69998H37.6ZM47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7ZM25.0001 17.9C26.7001 17.9 28.0001 18.6 28.9001 19.7V18.2H30.9001V28.8H28.9001V27.2H28.8001C28.0001 28.3 26.8001 29.1 25.0001 29.1C21.9001 29.1 19.6001 26.8 19.6001 23.5C19.6001 20.2 21.9001 17.9 25.0001 17.9ZM21.7001 23.5C21.7001 25.5 23.1001 27.1 25.3001 27.1C27.5001 27.1 28.9001 25.4 28.9001 23.5C28.9001 21.5 27.5001 19.9 25.3001 19.9C23.1001 19.9 21.7001 21.5 21.7001 23.5ZM44.2 22C43.7 19.6 41.5999 17.9 38.7999 17.9C35.3999 17.9 33.2 20.4 33.2 23.5C33.2 26.6 35.3999 29.1 38.7999 29.1C41.5999 29.1 43.7 27.3 44.2 24.9H42.0999C41.7 26.2 40.3999 27.2 38.7999 27.2C36.5999 27.2 35.2 25.6 35.2 23.6C35.2 21.6 36.5999 20 38.7999 20C40.3999 20 41.5999 21 42.0999 22.2H44.2V22ZM51.2001 17.9C52.9001 17.9 54.2001 18.6 55.1 19.7V18.2H57.1V28.8H55.1V27.2H55C54.2001 28.3 53 29.1 51.2001 29.1C48.1001 29.1 45.8 26.8 45.8 23.5C45.8 20.2 48.1001 17.9 51.2001 17.9ZM47.9001 23.5C47.9001 25.5 49.3 27.1 51.5 27.1C53.6 27.1 55.1 25.4 55.1 23.5C55.1 21.5 53.7001 19.9 51.5 19.9C49.3 19.9 47.9001 21.5 47.9001 23.5ZM68.6999 19.8C67.7999 18.7 66.4999 17.9 64.7999 17.9C61.6999 17.9 59.3999 20.2 59.3999 23.5C59.3999 26.8 61.5999 29.1 64.7999 29.1C66.4999 29.1 67.7999 28.3 68.5999 27.3H68.6999V28.8H70.6999V13.4H68.6999V19.8ZM65.0999 27.1C62.8999 27.1 61.4999 25.5 61.4999 23.5C61.4999 21.5 62.8999 19.9 65.0999 19.9C67.2999 19.9 68.6999 21.5 68.6999 23.5C68.5999 25.5 67.1999 27.1 65.0999 27.1ZM72.8 23.5C72.8 20.4 75 17.9 78.3 17.9C81.8 17.9 84 20.6 83.8 24.2H75C75.1 25.8 76.5 27.1 78.4 27.1C79.8 27.1 80.9 26.5 81.4 25.5H83.5C82.8 27.8 80.8 29.1 78.3 29.1C74.9 29.1 72.8 26.5 72.8 23.5ZM81.6 22.4C81.3 20.8 80 19.8 78.3 19.8C76.6001 19.8 75.4 20.9 75.1 22.4H81.6ZM98.2001 17.9C96.6001 17.9 95.3001 18.7 94.6001 19.9H94.5001C93.9001 18.7 92.7001 17.9 91.1001 17.9C89.7001 17.9 88.6001 18.6 88.0001 19.7V18.2H86.1001V28.8H88.1001V23.4C88.1001 21.4 89.1001 20 90.7001 19.9C92.2001 19.9 93.1001 20.9 93.1001 22.5V28.8H95.1001V23.2C95.1001 20.8 96.5001 19.9 97.7001 19.9C99.2001 19.9 100.1 20.9 100.1 22.5V28.8H102.1V22.3C102.2 19.7 100.7 17.9 98.2001 17.9ZM105.8 18.1L109.4 27L112.8 18.1H114.9L110.2 30.3C109.5 32.1 108.5 32.9 106.7 32.9H104.2V30.9H106.7C107.7 30.9 108.1 30.6 108.4 29.7L103.6 18.1H105.8Z"/>
+                    </svg>
+
                 </a>
             </div>
         </footer>
     </body>
-
 </html>
