@@ -698,11 +698,11 @@ body {
 .vk-icon:hover,
 .vk-icon:focus {
     fill: #68a2ca;
-} 
+}
 
 .vk-icon:active {
   fill: rgba(104, 162, 202, 0.3);
-} 
+}
 
 .telegram-icon {
     fill: #83b3d3;
@@ -712,11 +712,11 @@ body {
 .telegram-icon:hover,
 .telegram-icon:focus {
     fill: #68a2ca;
-} 
+}
 
 .telegram-icon:active {
   fill: rgba(104, 162, 202, 0.3);
-} 
+}
 
 
 .youtube-icon {
@@ -727,11 +727,11 @@ body {
 .youtube-icon:hover,
 .youtube-icon:focus {
     fill: #68a2ca;
-} 
+}
 
 .youtube-icon:active {
   fill: rgba(104, 162, 202, 0.3);
-} 
+}
 
 .phone-number {
   font-family: 'PT Sans', sans-serif;
@@ -765,11 +765,11 @@ body {
 .htmlacademy-logo:hover,
 .htmlacademy-logo:focus {
     fill: #756157;
-} 
+}
 
 .htmlacademy-logo:active {
   fill: rgba(117, 97, 87, 0.3);
-} 
+}
 
 /*CATALOG*/
 
@@ -1260,7 +1260,7 @@ label {
 }
 
 .did-favourites:active {
-  background: ##7db54f;
+  background: #7db54f;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1388,8 +1388,16 @@ label {
 .pagination-link-current {
   width: 60px;
   height: 60px;
-  background: #f2f2f2 !important;
-  border: 1px solid #f2f2f2 !important;
-  color: #000000 !important;
+  background: #f2f2f2 ;
+  border: 1px solid #f2f2f2 ;
+  color: #000000 ;
   border-radius: 4px;
+}
+
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
+  background: #f2f2f2 ;
+  border: 1px solid #f2f2f2 ;
+  color: #000000 ;
 }
