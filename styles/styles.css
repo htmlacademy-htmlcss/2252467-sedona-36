@@ -14,7 +14,9 @@
   font-display: swap;
 }
 
-* {
+* ,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -111,6 +113,16 @@ body {
   text-decoration: none;
   padding: 20px 0;
   display: block;
+}
+
+.navigation-link-main:hover,
+.navigation-link-main:hover {
+  opacity: 0.5;
+}
+
+
+.navigation-link-main:active {
+  opacity: 0.3;
 }
 
 .navigation-link-current {
@@ -583,7 +595,7 @@ body {
   padding: 14px 20px;
   gap: 260px;
   width: 452px;
-  background: #f2f2ff;
+  background: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: none;
   font-style: normal;
@@ -886,11 +898,167 @@ body {
   padding: 0;
 }
 
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:focus .control-mark {
+  opacity: 1;
+  outline: 3px solid #83b3d3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 13px;
+  height: 10px;
+  background-image: url(../images/check.svg);
+  content: "";
+}
+
+/* Radio */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  content: "";
+}
+
 .price-range-input-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
+  gap: 2px;
   margin-bottom: 20px;
+}
+
+
+.price-range-input {
+  position: relative;
+}
+
+.price-range-input input {
+  background: #f2f2f2;
+  text-align: left;
+  padding: 12px 32px 12px 20px;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.price-range-input:last-child input {
+  border-radius: 0 4px 4px 0;
+}
+
+.price-range-input:hover input {
+  background: #e6e6e6;
+}
+
+.price-range-input:focus input {
+  outline: 3px solid #83b3d3;
+}
+
+.price-range-input:active input {
+  outline: 2px solid #000000;
+}
+
+.price-range-input .input-label {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 0.3;
+  color: #000000;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+
+/* Range */
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
 }
 
 .form-buttons {

@@ -77,32 +77,38 @@
                         <div class="left-content">
                             <fieldset class="infrastructure">
                                 <legend>Инфраструктура:</legend>
-                                <label>
-                                    <input type="checkbox" name="pool" checked>
-                                    Бассейн
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Бассейн</span>
                                 </label>
-                                <label>
-                                    <input type="checkbox" name="parking" checked>
-                                    Парковка
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Парковка</span>
                                 </label>
-                                <label>
-                                    <input type="checkbox" name="wi-fi">
-                                    Wi-Fi
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Wi-Fi</span>
                                 </label>
                             </fieldset>
                             <fieldset class="type-of-housing">
                                 <legend>Тип жилья:</legend>
-                                <label>
-                                    <input type="radio" value="hotel" name="type-of-housing" checked>
-                                    Гостиница
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="radio" value="hotel" name="type-of-housing" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Гостиница</span>
                                 </label>
-                                <label>
-                                    <input type="radio" value="motel" name="type-of-housing">
-                                    Мотель
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="radio" value="motel" name="type-of-housing">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Мотель</span>
                                 </label>
-                                <label>
-                                    <input type="radio" value="apartments" name="type-of-housing">
-                                    Апартаменты
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="radio" value="apartments" name="type-of-housing">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Апартаменты</span>
                                 </label>
                             </fieldset>
                         </div>
@@ -110,16 +116,29 @@
                             <fieldset class="range-price">
                                 <legend>Стоимость</legend>
                                 <div class="price-range-input-wrap">
-                                    <label>
+                                    <label class="price-range-input">
                                         <input type="number" name="price-min" class="find-price" value="0">
-                                        От
+                                        <span class="input-label">от</span>
                                     </label>
-                                    <label>
+                                    <label class="price-range-input">
                                         <input type="number" name="price-max" class="find-price" value="9000">
-                                        До
+                                        <span class="input-label">до</span>
                                     </label>
                                 </div>
-                                <input type="range" name="price-range">
+
+
+                                <!-- <input type="range" name="price-range"> -->
+
+                                <div class="range-scale">
+                                    <div class="range-bar" style="left: 0; width: 226px">
+                                        <button type="button" class="range-toggle toggle-min">
+                                            <span class="visually-hidden">Изменить минимальную цену.</span>
+                                        </button>
+                                        <button type="button" class="range-toggle toggle-max">
+                                            <span class="visually-hidden">Изменить максимальную цену.</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </fieldset>
                             <div class="form-buttons">
                                 <button type="submit" class="ready">Применить</button>
