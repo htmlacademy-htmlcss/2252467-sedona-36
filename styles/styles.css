@@ -44,7 +44,15 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-header {
@@ -80,6 +88,15 @@ body {
 .navigation-list.navigation-user {
   max-width: 400px;
   padding-left: 0;
+}
+
+.navigation-list.navigation-user .navigation-item {
+  padding: 0 12px;
+}
+
+.navigation-list.navigation-user .navigation-item:last-child {
+  padding-right: 0;
+  padding-left: 20px;
 }
 
 .navigation-item {
@@ -150,7 +167,8 @@ body {
 .navigation-link-button {
   background: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 34px;
+  min-width: 160px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -182,8 +200,8 @@ body {
   padding: 5px;
   background-color: #7db54f;
   position: absolute;
-  top: 8px;
-  right: -9px;
+  top: 9px;
+  right: -8px;
   color: #ffffff;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -251,7 +269,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   width: 1200px;
-  padding: 69px 0;
+  padding: 69px 0 90px 0;
 }
 
 .square-tourists,
@@ -335,7 +353,12 @@ body {
 .advantages-item-content {
   width: 400px;
   min-height: 384px;
-  padding: 90px 85px;
+  padding: 112px 85px;
+}
+
+.advantages-item.blue-white:first-child .advantages-item-content,
+.advantages-item.blue-white:last-child .advantages-item-content {
+    padding: 101px 85px;
 }
 
 .blue-white {
@@ -374,9 +397,9 @@ body {
 
 .invitation-title {
   font-family: 'PT Sans', sans-serif;
-  line-height: 36px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 36px;
   color: #000000;
   text-transform: uppercase;
   margin: 0 0 20px 0;
@@ -398,13 +421,9 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   line-height: 26px;
-  font-size: 18px;
+  font-size: 22px;
   margin: 0;
 }
-
-
-
-
 
 .advice-list {
   text-align: center;
@@ -425,6 +444,10 @@ body {
   text-align: center;
 }
 
+.advice-item:last-child .advice-item-title {
+  margin-top: 26px;
+}
+
 .advice-item-content {
   width: 400px;
   min-height: 385px;
@@ -443,6 +466,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  margin: 30px 0;   
 }
 
 .advice-item-description {
@@ -451,7 +475,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-
+  margin: 0;
 }
 
 .food {
@@ -544,6 +568,7 @@ body {
 
 .subscribe-on-messages-bg-white .subscribe-message {
     color: #000000;
+    margin-top: -8px;
 }
 
 .subscribe-on-messages-bg-white .subscribe-description {
@@ -559,7 +584,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  margin: 0 0 20px 0;
+  margin: -6px 0 20px 0;
 
 }
 
@@ -612,7 +637,7 @@ body {
   background: #756157;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 8px 50px;
+  padding: 13px 50px;
   border-radius: 4px;
 }
 
@@ -809,7 +834,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  margin: 0 0 8px 0;
+  margin: 0 0 7px 0;
   padding: 0;
 }
 
@@ -895,6 +920,11 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin: 0;
+}
+
+.filters-form fieldset .control:last-child {
+  margin: 0;
 }
 
 /* Control */
@@ -967,7 +997,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 44px;
 }
 
 
@@ -1083,6 +1113,7 @@ legend {
   text-transform: capitalize;
   color: #ffffff;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 label {
@@ -1233,7 +1264,7 @@ label {
     border-radius: 4px;
     min-width: 292px;
     height: 48px;
-    padding: 10px 20px;
+    padding: 10px 14px;
     color: #333333;
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
@@ -1275,6 +1306,10 @@ label {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.view-sort .button.button-active {
+  border-color: #000000;
 }
 
 .view-sort .button:hover,
@@ -1325,25 +1360,25 @@ label {
   min-height: 438px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  padding: 20px;
+  padding: 20px 19px;
 }
 
 .product-card-image {
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   object-fit: cover;
 }
 
 .product-card-title {
   margin: 0 0 16px 0;
   padding: 0;
-}
-
-.product-card-link {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.product-card-link {
   color: #000000;
   text-decoration: none;
 }
@@ -1450,7 +1485,7 @@ label {
 }
 
 .show-rating {
-  padding: 8px 0;
+  padding: 8px 0 8px 3px;
   width: 140px;
   color: #333333;
   background: #f2f2f2;
@@ -1466,37 +1501,22 @@ label {
 
 .stars {
     max-width: 140px;
-    height: 17px;
-    display: block;
-    background: url(../images/icons/star.svg);
-    background-repeat: repeat-x;
-    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
 }
 
-.star-1 {
-    width: 18px;
+.star {
+  display: block;
+  width: 18px;
+  height: 17px;
+  background: url(../images/icons/star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-
-.star-2 {
-    width: 36px;
-}
-
-.star-3 {
-    width: 56px;
-}
-
-.star-4 {
-    width: 74px;
-}
-
-.star-5 {
-    width: 92px;
-}
-
-
 
 .catalog-hr {
-  margin: 40px 0;
+  margin: 39px 0;
   border: 0;
   border-top: 1px solid #e6e6e6;
 }
@@ -1514,6 +1534,8 @@ label {
 }
 
 .pagination-link {
+  width: 60px;
+  height: 60px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1523,12 +1545,13 @@ label {
   text-decoration: none;
   display: flex;
   align-items: center;
-  text-align: center;
+  align-self: inherit;
+  justify-content: center;
   text-transform: uppercase;
   background: #82b3d3;
   border-radius: 4px;
-  padding: 11px 24px;
   border: 1px solid #82b3d3;
+  text-align: center;
 }
 
 .pagination-link:hover,
@@ -1543,6 +1566,8 @@ label {
 
 
 .pagination-more {
+  width: 60px;
+  height: 60px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1553,10 +1578,10 @@ label {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   text-transform: uppercase;
   background: none;
   border-radius: 4px;
-  padding: 11px 24px;
 }
 
 .pagination-link-current {
