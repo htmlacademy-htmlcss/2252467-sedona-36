@@ -175,7 +175,7 @@
                     <li class="social-item">
                         <a href="https://vk.com/htmlacademy">
                             <svg class="vk-icon" aria-hidden="true" focusable="false" width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.95.948c.166-.546 0-.948-.795-.948H20.53c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.65c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.949.288 4.698 0 4.027 0H1.4C.65 0 .5.347.5.73c0 .682.89 4.07 4.145 8.551C6.815 12.341 9.87 14 12.653 14c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.61 13.216 19.903 14 20.905 14h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.81-1.858-.388-.491-.277-.71 0-1.147 0 0 3.2-4.426 3.534-5.929Z"/></svg>
-                            
+
                             <span class="visually-hidden">ВКонтакте</span>
                         </a>
                     </li>
@@ -211,6 +211,85 @@
                 </a>
             </div>
         </footer>
+        <div class="modal-container modal-closed">
+            <div class="modal modal-search">
+                <button class="modal-close-button">
+                    <svg class="close-icon" aria-hidden="true" focusable="false" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.3928 1.29231L13.1005 0L7.39282 5.70769L1.68513 0L0.392822 1.29231L6.10051 7L0.392822 12.7077L1.68513 14L7.39282 8.29231L13.1005 14L14.3928 12.7077L8.68513 7L14.3928 1.29231Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Закрыть</span>
+                </button>
+                <section class="modal-content">
+                    <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+                    <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <div class="form-row">
+                            <p class="form-field-title">Дата заезда:</p>
+                            <label class="form-field">
+                                <input type="text" name="date_check_in" value="27 апреля 2020">
+                                <span class="input-label">
+                                    <button type="button" class="icon-calendar"></button>
+                                </span>
+                                <span class="field-info field-info-error">Мы не можем отправить вас в прошлое.</span>
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <p class="form-field-title">Дата выезда:</p>
+                            <label class="form-field">
+                                <input type="text" name="date_check_out" value="1 сентября 2021">
+                                <span class="input-label">
+                                    <button type="button" class="icon-calendar"></button>
+                                </span>
+                                <span class="field-info">На эти даты есть свободные номера. Пока есть.</span>
+                            </label>
+                        </div>
+                        <div class="form-row-two">
+                            <div class="form-row">
+                                <p class="form-field-title">Взрослые:</p>
+                                <label class="form-field number-controls">
+                                    <input type="number" name="adults_number" value="2" min="0">
+                                    <button type="button" class="input-label minus">
+                                        <svg class="minus-icon" aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z"/>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="input-label plus">
+                                        <svg class="plus-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                                        </svg>
+                                    </button>
+                                </label>
+                            </div>
+                            <div class="form-row">
+                                <p class="form-field-title form-field-title-info">
+                                    Дети:
+                                    <span class="tooltip">
+                                        <button type="button" class="icon-info">
+                                            <svg width="3" height="12" viewBox="0 0 3 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z" fill="#ffffff"/>
+                                            </svg>
+                                        </button>
+                                        <span class="tooltip-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
+                                    </span>
+                                </p>
+                                <label class="form-field number-controls">
+                                    <input type="number" name="children_number" value="2" min="0">
+                                    <button type="button" class="input-label minus">
+                                        <svg class="minus-icon" aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z"/>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="input-label plus">
+                                        <svg class="plus-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                                        </svg>
+                                    </button>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-submit-button">Найти</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </body>
-
-</html>
+    </html>
