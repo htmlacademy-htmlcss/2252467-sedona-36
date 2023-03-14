@@ -24,11 +24,13 @@ html {
   height: 100%;
   display: flex;
   justify-content: center;
+  background: #f2f2f2;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   min-height: 100%;
   font-family: 'PT Sans', sans-serif;
   font-size: 20px;
@@ -38,10 +40,8 @@ body {
   width: 1200px;
   padding: 0;
   margin: 0;
-
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-
-/* header.main-header*/
 
 .visually-hidden {
   display: none;
@@ -230,7 +230,6 @@ body {
   height: 57px;
   background: url(../images/bg-hero-bottom.svg);
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 /* Title */
@@ -984,6 +983,13 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+.price-range-input input::-webkit-outer-spin-button,
+.price-range-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 .price-range-input:last-child input {
   border-radius: 0 4px 4px 0;
 }
@@ -1571,6 +1577,9 @@ label {
 }
 
 
+.modal-container.modal-closed {
+  display: none;
+}
 
 .modal-container {
   position: fixed;
@@ -1717,6 +1726,14 @@ label {
   outline: 2px solid #000000;
 }
 
+.form-field input::-webkit-outer-spin-button,
+.form-field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+
 .form-field .input-label {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -1737,6 +1754,8 @@ label {
   height: 15px;
   background-repeat: no-repeat;
   background-size: contain;
+  border: none;
+  cursor: pointer;
 }
 
 .form-field .field-info {
@@ -1780,11 +1799,21 @@ label {
   padding-right: 40px;
 }
 
+.number-controls input::-webkit-outer-spin-button,
+.number-controls input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 .form-field.number-controls .input-label {
   width: 20px;
   height: 20px;
   padding: 3px;
   opacity: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .form-field.number-controls .input-label svg {
@@ -1855,7 +1884,13 @@ label {
   position: relative;
 }
 
+.tooltip:hover .tooltip-text,
+.tooltip .icon-info:focus + .tooltip-text {
+  display: block;
+}
+
 .tooltip-text {
+  display: none;
   position: absolute;
   width: 256px;
   padding: 15px 18px;
@@ -1870,9 +1905,26 @@ label {
   text-transform: none;
   color: #ffffff;
 
-  top: 41px;
+  top: 47px;
   transform: translateX(-50%);
   z-index: 30;
+  margin-left: 12px;
+}
+
+.tooltip-text:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 9px solid #333333;
+  left: 0;
+  top: -9px;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
 }
 
 .form-submit-button {
@@ -1895,6 +1947,7 @@ label {
 .form-submit-button:hover,
 .form-submit-button:focus {
   background: #68a2ca;
+  border: none;
 }
 
 .form-submit-button:active {
