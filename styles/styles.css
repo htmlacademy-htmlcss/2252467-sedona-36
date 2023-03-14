@@ -1308,6 +1308,10 @@ label {
     justify-content: center;
 }
 
+.view-sort .button.button-active {
+  border-color: #000000;
+}
+
 .view-sort .button:hover,
 .view-sort .button:active {
     border-color: #000000;
@@ -1497,34 +1501,19 @@ label {
 
 .stars {
     max-width: 140px;
-    height: 17px;
-    display: block;
-    background: url(../images/icons/star.svg);
-    background-repeat: repeat-x;
-    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
 }
 
-.star-1 {
-    width: 18px;
+.star {
+  display: block;
+  width: 18px;
+  height: 17px;
+  background: url(../images/icons/star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-
-.star-2 {
-    width: 36px;
-}
-
-.star-3 {
-    width: 56px;
-}
-
-.star-4 {
-    width: 74px;
-}
-
-.star-5 {
-    width: 92px;
-}
-
-
 
 .catalog-hr {
   margin: 39px 0;
