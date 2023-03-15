@@ -813,6 +813,7 @@ body {
 
 
 .picture-blur {
+  background: #756157;
   background-image: url("../images/bg-catalog-blur.jpg");
   position: relative;
   background-repeat: no-repeat;
